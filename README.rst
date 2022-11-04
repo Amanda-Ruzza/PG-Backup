@@ -1,14 +1,8 @@
-pgbackup
+Pg Backup
 ========
 CLI for backing up remote PostgreSQL databases locally or to AWS S3.
 Preparing for Development
 -------------------------
-This project builds a CLI utility that give a connection string to a PostgreSQL database and backs itself up to an S3 bucket.
-Pre-Project requirements:
-- Build a PostgreSQL server
-- Have the proper version of the PostgreSQL client installed on the local machine, so we can access the PGdump tool to ‘dump the PostgreSQL Database’
-
-------------------
 1. Ensure ``pip`` and ``pipenv`` are installed
 2. Clone repository: ``git clone git@github.com:example/pgbackup``
 3. ``cd`` into repository
@@ -34,4 +28,14 @@ If virtualenv isn’t active then use:
  $ pipenv run make
 
 -----
------ 
+-----
+::
+_____________________________________________
+Project Study Notes:
+
+This project builds a CLI utility that give a connection string to a PostgreSQL database and backs itself up to an S3 bucket.
+Pre-Project requirements:
+- Build a PostgreSQL server
+- Have the proper version of the PostgreSQL client installed on the local machine, so we can access the PGdump tool to ‘dump the PostgreSQL Database’
+- The setup.py file specifies how the project is to be installed and defines the project's metadata. The 'setup' function defines where the 'setuptools' will look for the project's source code, and what other packages need to be installed so that the packages can work
+- 
