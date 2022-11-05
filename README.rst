@@ -42,4 +42,3 @@ Pre-Project requirements:
 - Using the ``Pytest built in features`` to clean up our tests and remove duplication
 - The ``Pytest fixture (@pytest.fixture)`` is a ``decorator``. A 'decorator' is a function that returns another function 
 - Using a ``Mocking Library`` to test things that have side effects or to modify code that it's not our own without affecting the real code. This prevents using the standard library function and modifying real things that could jeopardize the real project 
-- 
