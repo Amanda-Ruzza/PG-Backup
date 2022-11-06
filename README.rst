@@ -38,6 +38,7 @@ Pre-Project requirements:
 - Build a PostgreSQL server
 - Have the proper version of the PostgreSQL client installed on the local machine, so we can access the PGdump tool to ‘dump the PostgreSQL Database’
 - The ``setup.py`` file specifies how the project is to be installed and defines the project's metadata. The ``setup`` function defines where the ``setuptools`` will look for the project's source code, and what other packages need to be installed so that the packages can work
+- While setting up the ``testing path`` on the ``Makefile``, the correct syntax should have no spaces after the ``=`` as shown: ``PYTHONPATH=./src`` 
 - Using the ``Red, Green, Refactor `` TDD approach, build a CLI interpreter for testing thourgh ``pytest`` and added documentation to our test by creating a ``test file``
 - Using the ``Pytest built in features`` to clean up our tests and remove duplication
 - The ``Pytest fixture (@pytest.fixture)`` is a ``decorator``. A 'decorator' is a function that returns another function 
