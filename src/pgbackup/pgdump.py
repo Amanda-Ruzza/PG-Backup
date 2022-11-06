@@ -1,5 +1,10 @@
 # Defining the dump function
 import subprocess
+import sys
 
 def dump(url):
-    pass subprocess.Popen(['pg_dump', url], stdout=subprocess.PIPE)
+    try:
+        return subprocess.Popen(['pg_dump', url], stdout=subprocess.PIPE)
+    except OSError as err:
+        print(f"Error: {err}")
+        sys.exit(1)
