@@ -12,8 +12,13 @@ setup(
     long_description=readme,
     author='ANR',
     #author_email='xxx@email.com,'
-    install_requires=[],# this list defines where the necessary project dependencies will go
+    install_requires=['boto3'],# this list defines where the necessary project dependencies will go
     packages=find_packages('src'),
-    package_dir={'': 'src'} # this is a dictionary that points from an empty string to the 'src' directory
+    package_dir={'': 'src'}, # this is a dictionary that points from an empty string to the 'src' directory
+    entry_points={
+        'console_scripts':[
+            'pgbackup=pgbackup.cli:main',
+            ]
+        } 
 )
 

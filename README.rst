@@ -50,3 +50,4 @@ Pre-Project requirements:
 - Created a test function for S3 on the ``test_storage.py`` file 
 - boto3 is the 'client' that knows how to write from Python into S3 
 - the boto3 ``upload_fileobj`` function to upload a file-like object to S3
+- Made an ``automatic script creation`` dictionary on the ``setup.py`` file.  
