@@ -46,3 +46,7 @@ Pre-Project requirements:
 - ``Pytest Mock`` is a wrapper around the  Mock library. Used ``Side Effect`` key word argument/attribute to give a KeyError in the mock ``test_pgdump.py`` file 
 - The ``test_storage.py`` file implements the local storage strategy for the database dump 
 - Used the ``tempfile``package to generate temporary files for testing purposes
+- Used ``pipenv install boto3 `` to install the boto3 dependency within the Python's virtual environment as a way to implement the connection to AWS S3 to store the database backups
+- Created a test function for S3 on the ``test_storage.py`` file 
+- boto3 is the 'client' that knows how to write from Python into S3 
+- the boto3 ``upload_fileobj`` function to upload a file-like object to S3
