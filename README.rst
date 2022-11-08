@@ -34,7 +34,7 @@ _____________________________________________
 Project Study Notes:
 
 This project builds a CLI utility that give a connection string to a PostgreSQL database and backs itself up to an S3 bucket.
-Pre-Project requirements:
+Project implementations:
 - Build a PostgreSQL server
 - Have the proper version of the PostgreSQL client installed on the local machine, so we can access the PGdump tool to ‘dump the PostgreSQL Database’
 - The ``setup.py`` file specifies how the project is to be installed and defines the project's metadata. The ``setup`` function defines where the ``setuptools`` will look for the project's source code, and what other packages need to be installed so that the packages can work
@@ -52,4 +52,4 @@ Pre-Project requirements:
 - the boto3 ``upload_fileobj`` function to upload a file-like object to S3
 - Made an ``automatic script creation`` dictionary on the ``setup.py`` file
 - Built a ``wheel`` for the full package 
-- Created  a configuration file to set up the ``bdist_wheel``in order to define the Python version for this project 
+- Created  a configuration file [``setup.cfg``] to set up the ``bdist_wheel``in order to define the Python version for this project 
